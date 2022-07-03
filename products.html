@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Farmlove | Products</title>
+    <link rel="shortcut icon" href="images/OIP-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="products.js" async></script>
+  </head>
+  <body>
+    <div class="products-banner">
+      <div class="page-title">
+        Our Products
+      </div>
+    </div>
+    <div class="menu" id="sticky">
+        <nav class="navbar">
+          <div class="logo">
+            <img src="images/OIP-removebg-preview.png" class="logo" />
+          </div>
+          <a href="index.html">Home</a>
+          <a href="products.html">Products</a>
+          <a href="#">About</a>
+          <a href="#cart">
+            <img
+              src="images/cartproject-removebg-preview.png"
+              width="30px"
+              height="30px"
+            />
+          </a>
+        </nav>
+      </div>
+    <section class="featured">
+      <p>
+        <hr>
+        <h2 style="text-align:center;">Here at Farmlove we value quality and satisfaction of our customers above anything else</h2>
+        <hr>
+      </p>
+      <div class="featured-categories">
+        <a href="#fruits" class="fruits">
+          <div>
+            <h3 class="text">Fruits</h3>
+          </div>
+        </a>
+        <a href="#vegetables" class="vegetables">
+          <div>
+            <h3 class="text">Vegetables</h3>
+          </div>
+        </a>
+        <a href="#meats" class="meats">
+          <div>
+            <h3 class="text">Meats</h3>
+          </div>
+        </a>
+      </div>
+    </section>
+    <hr>
+    <!--deals start here-->
+    <div class="deals-container" id="deals">
+      <div class="parallax">
+          <div class="title">Deals</div>
+      </div>
+      <div class="deal">
+          save 20% on min-purchase 0f #149 on Vegetables<br/>
+          <button class="coupon-btn">Add Coupon</button>
+      </div>
+      <div class="deal">
+          save 10% on min-purchase 0f #179 on Fruits<br/>
+          <button class="coupon-btn">Add Coupon</button>
+      </div> <div class="deal">
+          save 15% on min-purchase 0f #199 on Meats<br/>
+          <button class="coupon-btn">Add Coupon</button>
+      </div>
+    </div>
+    <script>
+      var couponbtn = document.getElementsByClassName("coupon-btn")
+      for (var i = 0; i < couponbtn.length; i++){
+        var button = couponbtn[i]
+        button.addEventListener('click', couponClicked)
+      }
+      function couponClicked() {
+        alert('Your coupon has been added and will be rewarded on purchase');
+        
+      }
+    </script>
+    <!--deal ends-->
+    
+    <!--veg begins-->
+    <section class="prod">
+    <div class="veg-container" id="vegetables">
+      <div class="parallax">
+          <div class="title">Vegetables</div>
+    </div>
+
+    <div class="shop-items">
+      <div class="shop-item">
+        <span class="shop-item-title">Cabbage</span>
+        <img class="shop-item-image" src="images/cabbage.jpg" />
+        <div class="shop-item-details">
+          <span class="shop-item-price">$5.99</span>
+          <button class="btn btn-primary shop-item-button" type="button">
+            ADD TO CART
+          </button>
+        </div>
+      </div>
+
+      <div class="shop-item">
+        <span class="shop-item-title">Carrot</span>
+        <img class="shop-item-image" src="images/carrot.jpg" />
+        <div class="shop-item-details">
+          <span class="shop-item-price">$2.42</span>
+          <button class="btn btn-primary shop-item-button" type="button">
+            ADD TO CART
+          </button>
+        </div>
+      </div>
+
+      <div class="shop-item">
+        <span class="shop-item-title">Chilli Pepper</span>
+        <img class="shop-item-image" src="images/chillipepper.jpg" />
+        <div class="shop-item-details">
+          <span class="shop-item-price">$1.59</span>
+          <button class="btn btn-primary shop-item-button" type="button">
+            ADD TO CART
+          </button>
+        </div>
+      </div>
+
+      <div class="shop-item">
+        <span class="shop-item-title">Fresh Pepper</span>
+        <img class="shop-item-image" src="images/freshpepper.jpg" />
+        <div class="shop-item-details">
+          <span class="shop-item-price">$4.54</span>
+          <button class="btn btn-primary shop-item-button" type="button">
+            ADD TO CART
+          </button>
+        </div>
+      </div>
+
+      <div class="shop-item">
+        <span class="shop-item-title">Green Pepper</span>
+        <img class="shop-item-image" src="images/greenpepper.jpg" />
+        <div class="shop-item-details">
+          <span class="shop-item-price">$1.99</span>
+          <button class="btn btn-primary shop-item-button" type="button">
+            ADD TO CART
+          </button>
+        </div>
+      </div>
+
+      <div class="shop-item">
+        <span class="shop-item-title">Fresh Okro</span>
+        <img class="shop-item-image" src="images/okra.jpg" />
+        <div class="shop-item-details">
+          <span class="shop-item-price">$7.29</span>
+          <button class="btn btn-primary shop-item-button" type="button">
+            ADD TO CART
+          </button>
+        </div>
+      </div>
+
+      <div class="shop-item">
+        <span class="shop-item-title">Fresh Onions</span>
+        <img class="shop-item-image" src="images/onions.jpg" />
+        <div class="shop-item-details">
+          <span class="shop-item-price">$3.45</span>
+          <button class="btn btn-primary shop-item-button" type="button">
+            ADD TO CART
+          </button>
+        </div>
+      </div>
+
+      <div class="shop-item">
+        <span class="shop-item-title">Red Pepper</span>
+        <img class="shop-item-image" src="images/redpepper.jpg" />
+        <div class="shop-item-details">
+          <span class="shop-item-price">$2.30</span>
+          <button class="btn btn-primary shop-item-button" type="button">
+            ADD TO CART
+          </button>
+        </div>
+      </div>
+
+      <div class="shop-item">
+        <span class="shop-item-title">Fresh Spinach</span>
+        <img class="shop-item-image" src="images/spinach.jpg" />
+        <div class="shop-item-details">
+          <span class="shop-item-price">$4.68</span>
+          <button class="btn btn-primary shop-item-button" type="button">
+            ADD TO CART
+          </button>
+        </div>
+      </div>
+    </div>
+    <!--veg end-->
+
+    <!--Fruit starts here-->
+    <div class="fruit-container" id="fruits">
+      <div class="parallax">
+          <div class="title">Fruits</div>
+    </div>
+
+    <div class="shop-items">
+      <div class="shop-item">
+        <span class="shop-item-title">Banana</span>
+        <img class="shop-item-image" src="images/banana.jpg" />
+        <div class="shop-item-details">
+          <span class="shop-item-price">$12.99</span>
+          <button class="btn btn-primary shop-item-button" type="button">
+            ADD TO CART
+          </button>
+        </div>
+      </div>
+
+      <div class="shop-item">
+        <span class="shop-item-title">Grapes</span>
+        <img class="shop-item-image" src="images/grapes.jpg" />
+        <div class="shop-item-details">
+          <span class="shop-item-price">$10.42</span>
+          <button class="btn btn-primary shop-item-button" type="button">
+            ADD TO CART
+          </button>
+        </div>
+      </div>
+
+      <div class="shop-item">
+        <span class="shop-item-title">Green Apple</span>
+        <img class="shop-item-image" src="images/greenapple.jpg" />
+        <div class="shop-item-details">
+          <span class="shop-item-price">$12.93</span>
+          <button class="btn btn-primary shop-item-button" type="button">
+            ADD TO CART
+          </button>
+        </div>
+      </div>
+
+      <div class="shop-item">
+        <span class="shop-item-title">Orange</span>
+        <img class="shop-item-image" src="images/orange.jpg" />
+        <div class="shop-item-details">
+          <span class="shop-item-price">$10.43</span>
+          <button class="btn btn-primary shop-item-button" type="button">
+            ADD TO CART
+          </button>
+        </div>
+      </div>
+
+      <div class="shop-item">
+        <span class="shop-item-title">Red Apple</span>
+        <img class="shop-item-image" src="images/redapple.jpg" />
+        <div class="shop-item-details">
+          <span class="shop-item-price">$9.49</span>
+          <button class="btn btn-primary shop-item-button" type="button">
+            ADD TO CART
+          </button>
+        </div>
+      </div>
+
+      <div class="shop-item">
+        <span class="shop-item-title">Pineapple</span>
+        <img class="shop-item-image" src="images/pineapple .jpg" />
+        <div class="shop-item-details">
+          <span class="shop-item-price">$14.45</span>
+          <button class="btn btn-primary shop-item-button" type="button">
+            ADD TO CART
+          </button>
+        </div>
+      </div>
+
+      <div class="shop-item">
+        <span class="shop-item-title">Shawershop</span>
+        <img class="shop-item-image" src="images/shawershop.jpg" />
+        <div class="shop-item-details">
+          <span class="shop-item-price">$11.47</span>
+          <button class="btn btn-primary shop-item-button" type="button">
+            ADD TO CART
+          </button>
+        </div>
+      </div>
+
+      <div class="shop-item">
+        <span class="shop-item-title">Star Fruit</span>
+        <img class="shop-item-image" src="images/starfruit.jpg" />
+        <div class="shop-item-details">
+          <span class="shop-item-price">$10.90</span>
+          <button class="btn btn-primary shop-item-button" type="button">
+            ADD TO CART
+          </button>
+        </div>
+      </div>
+    </div>
+    <!--Fruits end here-->
+
+    <!--meat starts here-->
+    <div class="meat-container" id="meats">
+      <div class="parallax">
+          <div class="title">Meats</div>
+    </div>
+    <div class="shop-items">
+      <div class="shop-item">
+        <span class="shop-item-title">Chicken</span>
+        <img class="shop-item-image" src="images/chicken .jpg" />
+        <div class="shop-item-details">
+          <span class="shop-item-price">$14.99</span>
+          <button class="btn btn-primary shop-item-button" type="button">
+            ADD TO CART
+          </button>
+        </div>
+      </div>
+
+      <div class="shop-item">
+        <span class="shop-item-title">Cow Meat</span>
+        <img class="shop-item-image" src="images/cow .jpg" />
+        <div class="shop-item-details">
+          <span class="shop-item-price">$16.99</span>
+          <button class="btn btn-primary shop-item-button" type="button">
+            ADD TO CART
+          </button>
+        </div>
+      </div>
+
+      <div class="shop-item">
+        <span class="shop-item-title">Vension (Deer)</span>
+        <img class="shop-item-image" src="images/deer.jpg" />
+        <div class="shop-item-details">
+          <span class="shop-item-price">$12.99</span>
+          <button class="btn btn-primary shop-item-button" type="button">
+            ADD TO CART
+          </button>
+        </div>
+      </div>
+
+      <div class="shop-item">
+        <span class="shop-item-title">Goat Meat</span>
+        <img class="shop-item-image" src="images/goat.jpg" />
+        <div class="shop-item-details">
+          <span class="shop-item-price">$18.44</span>
+          <button class="btn btn-primary shop-item-button" type="button">
+            ADD TO CART
+          </button>
+        </div>
+      </div>
+
+      <div class="shop-item">
+        <span class="shop-item-title">Pork (Pig)</span>
+        <img class="shop-item-image" src="images/pork.jpg" />
+        <div class="shop-item-details">
+          <span class="shop-item-price">$21.00</span>
+          <button class="btn btn-primary shop-item-button" type="button">
+            ADD TO CART
+          </button>
+        </div>
+      </div>
+
+      <div class="shop-item">
+        <span class="shop-item-title">Ram Meat</span>
+        <img class="shop-item-image" src="images/ram.jpg" />
+        <div class="shop-item-details">
+          <span class="shop-item-price">$9.99</span>
+          <button class="btn btn-primary shop-item-button" type="button">
+            ADD TO CART
+          </button>
+        </div>
+      </div>
+    </div>
+    <!--meat ends here-->
+  </section>
+
+    <!--Cart starts here-->
+    <section class="cart-container content-section" id="cart">
+      <h2 class="cart-header">CART</h2>
+      <div class="cart-row">
+        <span class="cart-item cart-header cart-column">ITEM</span>
+        <span class="cart-price cart-header cart-column">PRICE</span>
+        <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+      </div>
+      <div class="cart-items"></div>
+      <div class="cart-total">
+        <strong class="cart-total-title">Total</strong>
+        <span class="cart-total-price">$0</span>
+      </div>
+      <a
+        target="_blank"
+        style="text-decoration: none;"
+        href="Payment.html"
+        ><button class="btn btn-primary btn-purchase" type="button">
+          PURCHASE
+        </button>
+      </a>
+    </section>
+    <!--Cart ends here-->
+  </body>
+</html>
